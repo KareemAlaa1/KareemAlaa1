@@ -21,3 +21,7 @@
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KareemAlaa1&repo=Ladders-Snakes-Monopoly-Game&theme=shades-of-blue)](https://github.com/KareemAlaa1/Ladders-Snakes-Monopoly-Game)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KareemAlaa1&repo=Shipping-company-simulator&theme=shades-of-blue)](https://github.com/KareemAlaa1/Shipping-company-simulator)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KareemAlaa1&repo=GigaChat-Backend&theme=shades-of-blue)](https://github.com/KareemAlaa1/GigaChat-Backend)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KareemAlaa1&repo=Five-Stage-Pipelined-Processor&theme=shades-of-blue)](https://github.com/KareemAlaa1/Five-Stage-Pipelined-Processor)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KareemAlaa1&repo=Sudoku-Solver-KNN-Based-App&theme=shades-of-blue)](https://github.com/KareemAlaa1/Sudoku-Solver-KNN-Based-App)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KareemAlaa1&repo=CarTech-Website&theme=shades-of-blue)](https://github.com/KareemAlaa1/CarTech-Website)
