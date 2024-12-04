@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Kareem Abu Alenein</h1>
+<h1 align="center">Hi 👋, I'm Kareem Abu Al Enein</h1>
 <h3 align="center">I'm a Computer Engineering student at Cairo University. I have an interest in Embedded Systems & Back-end development.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=kareemalaa1&label=Profile%20views&color=0e75b6&style=flat" alt="kareemalaa1" /> </p>
