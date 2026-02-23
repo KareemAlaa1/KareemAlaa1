@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Kareem Abu Al Enein</h1>
-<h3 align="center">I'm a fresh Computer Engineering graduate with a strong passion for software development, particularly backend engineering.</h3>
+<h3 align="center">I'm a Computer Engineer motivated to design and build systems that turn real-world challenges into scalable, life-improving solutions.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=kareemalaa1&label=Profile%20views&color=0e75b6&style=flat" alt="kareemalaa1" /> </p>
 
