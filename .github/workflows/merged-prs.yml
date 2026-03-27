@@ -2,31 +2,41 @@ name: Update Merged PRs
 
 on:
   schedule:
-    - cron: '0 0 * * SAT'  # runs every Monday at 00:00 UTC
-  workflow_dispatch:       # allows manual run
+    - cron: '0 0 * * SAT'  # every Saturday at 00:00 UTC
+  workflow_dispatch:
 
 jobs:
   update-merged-prs:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Generate merged PRs list
-        uses: peter-evans/github-merged-pull-requests@v1
-        with:
-          author: kareemalaa1       # your GitHub username
-          state: merged
-          sort: created
-          limit: 10                # number of PRs to show
-          output-file: merged-prs.md
+      - name: Fetch merged PRs and save to file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: kareemalaa1
+        run: |
+          echo "### Last 10 Merged Pull Requests" > merged-prs.md
+          for repo in $(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+                https://api.github.com/users/$GITHUB_USERNAME/repos?per_page=100 \
+                | jq -r '.[].name'); do
+            prs=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+                  "https://api.github.com/repos/$GITHUB_USERNAME/$repo/pulls?state=closed&per_page=100" \
+                  | jq -r '.[] | select(.merged_at != null) | "- [#\(.number)](\(.html_url)) - \(.title) (\(.merged_at | split("T")[0]))"' )
+            if [ ! -z "$prs" ]; then
+              echo "$prs" >> merged-prs.md
+            fi
+          done
+          # Keep only last 10
+          tail -n 10 merged-prs.md > temp.md
+          mv temp.md merged-prs.md
 
-      - name: Commit PR list
+      - name: Commit merged PRs
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add merged-prs.md
-          git commit -m "Update merged PR list" || echo "No changes to commit"
+          git commit -m "Update merged PR list" || echo "No changes"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
