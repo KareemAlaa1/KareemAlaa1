@@ -12,5 +12,23 @@
 <br>
 
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=kareemalaa1&theme=blueberry&hide_border=false)<br/>
+<table>
+  <tr>
+    <td>
+      <a href="https://github.com/rowkav09/GitHub-profile-stats">
+        <img src="https://ghstats.dev/api/card?username=kareemalaa1&theme=midnight&show_ring=false&hide=trend%2Cavg%2Cactive_day%2Cgrade%2Ccontributions%2Crepos%2Cfollowers&border_radius=25" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/rowkav09/GitHub-profile-stats">
+        <img src="https://ghstats.dev/api/langs?username=kareemalaa1&theme=midnight&border_radius=25&max_langs=12" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=kareemalaa1&theme=highcontrast&hide_border=false&border_radius=25" />
+    </td>
+  </tr>
+</table>
 
